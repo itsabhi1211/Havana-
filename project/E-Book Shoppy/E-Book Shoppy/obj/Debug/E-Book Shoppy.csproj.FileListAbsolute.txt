@@ -1,0 +1,71 @@
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\E-Book Shoppy.dll.config
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\E-Book Shoppy.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\E-Book Shoppy.pdb
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\csc.exe
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\csc.exe.config
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\csc.rsp
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\csi.exe
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\csi.exe.config
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\csi.rsp
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\Microsoft.CodeAnalysis.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\Microsoft.CSharp.Core.targets
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\Microsoft.Managed.Core.targets
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\Microsoft.VisualBasic.Core.targets
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\System.AppContext.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\System.Collections.Immutable.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\System.Console.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\System.Diagnostics.StackTrace.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\System.IO.Compression.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\System.IO.FileSystem.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\System.IO.FileSystem.Primitives.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\System.IO.Pipes.AccessControl.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\System.IO.Pipes.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\System.Reflection.Metadata.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\System.Security.AccessControl.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\System.Security.Claims.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\System.Security.Cryptography.Encoding.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\System.Security.Cryptography.Primitives.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\System.Security.Principal.Windows.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\System.Text.Encoding.CodePages.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\System.ValueTuple.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\System.Xml.ReaderWriter.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\System.Xml.XmlDocument.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\System.Xml.XPath.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\System.Xml.XPath.XDocument.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\vbc.exe
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\vbc.exe.config
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\vbc.rsp
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\VBCSCompiler.exe
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\roslyn\VBCSCompiler.exe.config
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\Antlr3.Runtime.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\AspNet.ScriptManager.bootstrap.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\AspNet.ScriptManager.jQuery.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\Microsoft.AspNet.FriendlyUrls.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\Microsoft.ScriptManager.MSAjax.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\Microsoft.ScriptManager.WebForms.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\Microsoft.Web.Infrastructure.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\Newtonsoft.Json.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\System.Web.Optimization.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\WebGrease.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\System.Web.Optimization.xml
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\Newtonsoft.Json.xml
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\Antlr3.Runtime.pdb
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\Microsoft.AspNet.FriendlyUrls.xml
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\obj\Debug\E-Book Shoppy.csproj.CoreCompileInputs.cache
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\obj\Debug\E-Book Shoppy.csproj.CopyComplete
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\obj\Debug\E-Book Shoppy.dll
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\obj\Debug\E-Book Shoppy.pdb
+I:\Newly Projects\E-Book Shoppy\E-Book Shoppy\obj\Debug\E-Book Shoppy.csprojAssemblyReference.cache

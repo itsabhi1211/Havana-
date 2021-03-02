@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="HavanaRealEstate" Class="HavanadataclassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-3N7Q01N\ABHISQLEXPRESS;Initial Catalog=HavanaRealEstate;Integrated Security=True" SettingsObjectName="HavanaDAL.Properties.Settings" SettingsPropertyName="HavanaRealEstateConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.FeebackRply" Member="FeebackRplies">
+    <Type Name="FeebackRply">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RplyId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Rply" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Updt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Crdt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tblfeedback_FeebackRply" Member="tblfeedback" ThisKey="RplyId" OtherKey="Id" Type="tblfeedback" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblavailableblocks" Member="tblavailableblocks">
+    <Type Name="tblavailableblock">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BlockId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BlockNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsBooked" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Crdt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Updt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tblavailableblock_tblProperty" Member="tblProperties" ThisKey="Id" OtherKey="FlatId" Type="tblProperty" />
+      <Association Name="tblblockcategory_tblavailableblock" Member="tblblockcategory" ThisKey="BlockId" OtherKey="Id" Type="tblblockcategory" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblbank" Member="tblbanks">
+    <Type Name="tblbank">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RegId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BankName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BankBranch" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IFSC" Type="System.String" DbType="VarChar(11)" CanBeNull="true" />
+      <Column Name="AccountNo" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Updt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Crdt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tblreg_tblbank" Member="tblreg" ThisKey="RegId" OtherKey="Id" Type="tblreg" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblblockcategory" Member="tblblockcategories">
+    <Type Name="tblblockcategory">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BlockName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Crdt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Updt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tblblockcategory_tblavailableblock" Member="tblavailableblocks" ThisKey="Id" OtherKey="BlockId" Type="tblavailableblock" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblcontactus" Member="tblcontactus">
+    <Type Name="tblcontactus">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Contact" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Message" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Updt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Crdt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tblcontactus_tblrplycontact" Member="tblrplycontacts" ThisKey="Id" OtherKey="ContactId" Type="tblrplycontact" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblEmiMode" Member="tblEmiModes">
+    <Type Name="tblEmiMode">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PropertyId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlanMasterId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlanChargeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Mode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Installment" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="Crdt" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="Updt" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tblEmiMode_tblPayment" Member="tblPayments" ThisKey="Id" OtherKey="EMiModeId" Type="tblPayment" />
+      <Association Name="tblEmiMode_tblPaymentHistory" Member="tblPaymentHistories" ThisKey="Id" OtherKey="EMiModeId" Type="tblPaymentHistory" />
+      <Association Name="tblEmiMode_tblPaymentMode" Member="tblPaymentModes" ThisKey="Id" OtherKey="EMiModeId" Type="tblPaymentMode" />
+      <Association Name="tblPlanCharge_tblEmiMode" Member="tblPlanCharge" ThisKey="PlanChargeId" OtherKey="Id" Type="tblPlanCharge" IsForeignKey="true" />
+      <Association Name="tblPlansMaster_tblEmiMode" Member="tblPlansMaster" ThisKey="PlanMasterId" OtherKey="Id" Type="tblPlansMaster" IsForeignKey="true" />
+      <Association Name="tblProperty_tblEmiMode" Member="tblProperty" ThisKey="PropertyId" OtherKey="Id" Type="tblProperty" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblfeedback" Member="tblfeedbacks">
+    <Type Name="tblfeedback">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ContactNo" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Msg" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Rating" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="Updt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Crdt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tblfeedback_FeebackRply" Member="FeebackRplies" ThisKey="Id" OtherKey="RplyId" Type="FeebackRply" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblInvoice" Member="tblInvoices">
+    <Type Name="tblInvoice">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InvoiceNo" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Crdt" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="Updt" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tblreg_tblInvoice" Member="tblreg" ThisKey="UserId" OtherKey="Id" Type="tblreg" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblkyc" Member="tblkycs">
+    <Type Name="tblkyc">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RegId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Pan" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Aadhaar" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Updt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Crdt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tblreg_tblkyc" Member="tblreg" ThisKey="RegId" OtherKey="Id" Type="tblreg" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblPayment" Member="tblPayments">
+    <Type Name="tblPayment">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EMiModeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TotalAmount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="PaidAmount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="DueAmount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="ExtraCharge" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="InstallmentNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NextDate" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="PaymentDate" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="Updt" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsPaymentCompleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tblEmiMode_tblPayment" Member="tblEmiMode" ThisKey="EMiModeId" OtherKey="Id" Type="tblEmiMode" IsForeignKey="true" />
+      <Association Name="tblreg_tblPayment" Member="tblreg" ThisKey="UserId" OtherKey="Id" Type="tblreg" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblPaymentHistory" Member="tblPaymentHistories">
+    <Type Name="tblPaymentHistory">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EMiModeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InvoiceNo" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TotalAmount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="PaidAmount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="DueAmount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="ExtraCharge" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="InstallmentNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NextDate" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="PaymentDate" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="Updt" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsPaymentCompleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tblEmiMode_tblPaymentHistory" Member="tblEmiMode" ThisKey="EMiModeId" OtherKey="Id" Type="tblEmiMode" IsForeignKey="true" />
+      <Association Name="tblreg_tblPaymentHistory" Member="tblreg" ThisKey="UserId" OtherKey="Id" Type="tblreg" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblPaymentMode" Member="tblPaymentModes">
+    <Type Name="tblPaymentMode">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Mode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BankName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BankBranch" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Check]" Member="Check" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DD" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TransactionID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Crdt" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="Updt" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="EMiModeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tblEmiMode_tblPaymentMode" Member="tblEmiMode" ThisKey="EMiModeId" OtherKey="Id" Type="tblEmiMode" IsForeignKey="true" />
+      <Association Name="tblreg_tblPaymentMode" Member="tblreg" ThisKey="UserId" OtherKey="Id" Type="tblreg" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblPlanCharges" Member="tblPlanCharges">
+    <Type Name="tblPlanCharge">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PlanId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EMI" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Total_EMI" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Tax" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Taxed_Amount" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Monthly_Amount" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Total_Amount" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Updt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Crdt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Association Name="tblPlanCharge_tblEmiMode" Member="tblEmiModes" ThisKey="Id" OtherKey="PlanChargeId" Type="tblEmiMode" />
+      <Association Name="tblPlansMaster_tblPlanCharge" Member="tblPlansMaster" ThisKey="PlanId" OtherKey="Id" Type="tblPlansMaster" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblPlansMaster" Member="tblPlansMasters">
+    <Type Name="tblPlansMaster">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PlanName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Updt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Crdt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PropertyId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tblPlansMaster_tblEmiMode" Member="tblEmiModes" ThisKey="Id" OtherKey="PlanMasterId" Type="tblEmiMode" />
+      <Association Name="tblPlansMaster_tblPlanCharge" Member="tblPlanCharges" ThisKey="Id" OtherKey="PlanId" Type="tblPlanCharge" />
+      <Association Name="tblProperty_tblPlansMaster" Member="tblProperty" ThisKey="PropertyId" OtherKey="Id" Type="tblProperty" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblprofile" Member="tblprofiles">
+    <Type Name="tblprofile">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RegId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Picture" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Pin" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DOB" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Updt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Crdt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tblreg_tblprofile" Member="tblreg" ThisKey="RegId" OtherKey="Id" Type="tblreg" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblProperties" Member="tblProperties">
+    <Type Name="tblProperty">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Bedroom" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Bathroom" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Area" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="[For]" Member="For" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="Updt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Crdt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="FlatId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tblProperty_tblEmiMode" Member="tblEmiModes" ThisKey="Id" OtherKey="PropertyId" Type="tblEmiMode" />
+      <Association Name="tblProperty_tblPlansMaster" Member="tblPlansMasters" ThisKey="Id" OtherKey="PropertyId" Type="tblPlansMaster" />
+      <Association Name="tblavailableblock_tblProperty" Member="tblavailableblock" ThisKey="FlatId" OtherKey="Id" Type="tblavailableblock" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblreg" Member="tblregs">
+    <Type Name="tblreg">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RegNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ContactNo" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="IsVerified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Updt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Crdt" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tblreg_tblbank" Member="tblbanks" ThisKey="Id" OtherKey="RegId" Type="tblbank" />
+      <Association Name="tblreg_tblInvoice" Member="tblInvoices" ThisKey="Id" OtherKey="UserId" Type="tblInvoice" />
+      <Association Name="tblreg_tblkyc" Member="tblkycs" ThisKey="Id" OtherKey="RegId" Type="tblkyc" />
+      <Association Name="tblreg_tblPayment" Member="tblPayments" ThisKey="Id" OtherKey="UserId" Type="tblPayment" />
+      <Association Name="tblreg_tblPaymentHistory" Member="tblPaymentHistories" ThisKey="Id" OtherKey="UserId" Type="tblPaymentHistory" />
+      <Association Name="tblreg_tblPaymentMode" Member="tblPaymentModes" ThisKey="Id" OtherKey="UserId" Type="tblPaymentMode" />
+      <Association Name="tblreg_tblprofile" Member="tblprofiles" ThisKey="Id" OtherKey="RegId" Type="tblprofile" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblrplycontact" Member="tblrplycontacts">
+    <Type Name="tblrplycontact">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ContactId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Rply" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Crdt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Updt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tblcontactus_tblrplycontact" Member="tblcontactus" ThisKey="ContactId" OtherKey="Id" Type="tblcontactus" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.Sp_Invoice" Method="Sp_Invoice">
+    <Parameter Name="UserId" Parameter="userId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="InvoiceNo" Parameter="invoiceNo" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="Message" Parameter="message" Type="System.String" DbType="VarChar(100)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Sp_PaymentMode" Method="Sp_PaymentMode">
+    <Parameter Name="UserId" Parameter="userId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Mode" Parameter="mode" Type="System.Int32" DbType="Int" />
+    <Parameter Name="BankName" Parameter="bankName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="BankBranch" Parameter="bankBranch" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Check" Parameter="check" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="DD" Parameter="dD" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="TransactionID" Parameter="transactionID" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="EmiModeId" Parameter="emiModeId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Message" Parameter="message" Type="System.String" DbType="VarChar(100)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_propertydetails" Method="sp_propertydetails">
+    <ElementType Name="sp_propertydetailsResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Bedroom" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Bathroom" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Area" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="PType" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_rating" Method="sp_rating">
+    <ElementType Name="sp_ratingResult">
+      <Column Name="Rating" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="Total" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spPaymentMode" Method="spPaymentMode">
+    <Parameter Name="UserId" Parameter="userId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Mode" Parameter="mode" Type="System.Int32" DbType="Int" />
+    <Parameter Name="BankName" Parameter="bankName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="BankBranch" Parameter="bankBranch" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Cheque" Parameter="cheque" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DD" Parameter="dD" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TransactionId" Parameter="transactionId" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="EmiModeId" Parameter="emiModeId" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spUpdatePayment" Method="spUpdatePayment">
+    <Parameter Name="UserId" Parameter="userId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="EmiMode" Parameter="emiMode" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TotalAmount" Parameter="totalAmount" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="PaidAmount" Parameter="paidAmount" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="DueAmount" Parameter="dueAmount" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="ExtraCharge" Parameter="extraCharge" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="InstallmentNo" Parameter="installmentNo" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NextDate" Parameter="nextDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PaymentDate" Parameter="paymentDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="Message" Parameter="message" Type="System.String" DbType="VarChar(100)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spViewAllBlocks" Method="spViewAllBlocks">
+    <Parameter Name="BlockName" Parameter="blockName" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="BlockNo" Parameter="blockNo" Type="System.Int32" DbType="Int" />
+    <ElementType Name="spViewAllBlocksResult">
+      <Column Name="BlockName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BlockId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BlockNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsBooked" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Crdt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Updt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spPaymentHistory" Method="spPaymentHistory">
+    <Parameter Name="UserId" Parameter="userId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="EmiMode" Parameter="emiMode" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TotalAmount" Parameter="totalAmount" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="PaidAmount" Parameter="paidAmount" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="DueAmount" Parameter="dueAmount" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="ExtraCharge" Parameter="extraCharge" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="InstallmentNo" Parameter="installmentNo" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NextDate" Parameter="nextDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PaymentDate" Parameter="paymentDate" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="PrintInvoiceNo" Parameter="printInvoiceNo" Type="System.Int64" DbType="BigInt" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spPropertyDetails" Method="spPropertyDetails">
+    <Parameter Name="PropertyId" Parameter="propertyId" Type="System.Int32" DbType="Int" />
+    <ElementType Name="spPropertyDetailsResult">
+      <Column Name="PlanName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="EmiMode" Type="System.String" DbType="VarChar(16) NOT NULL" CanBeNull="false" />
+      <Column Name="EmiModeId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="InstallMent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="PropertyId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlanMasterId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlanchargeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Total_Amount" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="FlatId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

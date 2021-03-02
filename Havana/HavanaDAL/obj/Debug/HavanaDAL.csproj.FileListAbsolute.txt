@@ -1,0 +1,2 @@
+I:\Newly Projects\Havana\HavanaDAL\obj\Debug\HavanaDAL.csprojAssemblyReference.cache
+I:\Newly Projects\Havana\HavanaDAL\obj\Debug\HavanaDAL.csproj.CoreCompileInputs.cache

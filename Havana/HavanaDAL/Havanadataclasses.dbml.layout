@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 17.75, 14.875" name="Havanadataclasses">
+  <DataContextMoniker Name="/HavanadataclassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="863c2e52-f97b-4949-8ef7-71a5eaf4d7eb" absoluteBounds="9.5, 9.25, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/HavanadataclassesDataContext/FeebackRply" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d515e05a-c9bb-489d-8c86-70792791ecd0" absoluteBounds="9.515, 9.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1f540226-5619-45e9-bbb3-1a93e72ea7aa" absoluteBounds="15.5, 0.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/HavanadataclassesDataContext/tblavailableblock" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d607f731-b185-4b38-b133-218aef048c4c" absoluteBounds="15.515, 1.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1fc6ae66-2d0f-4533-b934-a6db1bce8766" absoluteBounds="3.5, 4.25, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/HavanadataclassesDataContext/tblbank" />
+      <nestedChildShapes>
+        <elementListCompartment Id="80a8fd5e-4835-4635-9499-bda8d40f994e" absoluteBounds="3.515, 4.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8da25843-2b26-4ab4-bada-e88107fef2c5" absoluteBounds="12.75, 1.125, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/HavanadataclassesDataContext/tblblockcategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4ae9559a-a15c-4211-8bdf-dd1c625b1b7b" absoluteBounds="12.765, 1.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b9a87de8-4f9f-40fc-a91b-d5e71f1079e8" absoluteBounds="6.75, 1, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/HavanadataclassesDataContext/tblcontactus" />
+      <nestedChildShapes>
+        <elementListCompartment Id="46156804-6d6e-4b3a-87b6-4165c8b2b320" absoluteBounds="6.765, 1.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="feeae468-b1d6-4e20-b6f3-b928dffbc993" absoluteBounds="6.75, 9, 2, 2.5401025390624987">
+      <DataClassMoniker Name="/HavanadataclassesDataContext/tblfeedback" />
+      <nestedChildShapes>
+        <elementListCompartment Id="177dfcb3-642f-4bc1-beb0-fa3a69a33d79" absoluteBounds="6.765, 9.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d68abbd4-bdb3-4f97-a299-e9670b7c9c43" absoluteBounds="3.5, 1.25, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/HavanadataclassesDataContext/tblkyc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="19e34c88-fede-4779-a9ab-386505bdf3a6" absoluteBounds="3.515, 1.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="783b69a3-653b-4fef-a3a2-ad372233cbe8" absoluteBounds="9.5, 5, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/HavanadataclassesDataContext/tblPlanCharge" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6f7064bb-00da-4cc0-aa44-056e40e1d637" absoluteBounds="9.515, 5.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7996ef7f-826f-4ac6-b255-1cccf3f17cf4" absoluteBounds="6.75, 5.25, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/HavanadataclassesDataContext/tblPlansMaster" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5b503e92-0833-4852-8cdf-82baa658d9f7" absoluteBounds="6.765, 5.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6a71beb6-21c7-4007-a3e0-b79b77efb389" absoluteBounds="3.5, 7.5, 2, 3.1170068359375014">
+      <DataClassMoniker Name="/HavanadataclassesDataContext/tblprofile" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eadf6e97-d97b-4610-831b-6d41359272a7" absoluteBounds="3.515, 7.96, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a4741104-2a3a-43ef-81fe-53d8d1d4a514" absoluteBounds="0.75, 11.75, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/HavanadataclassesDataContext/tblProperty" />
+      <nestedChildShapes>
+        <elementListCompartment Id="61ad4e97-ba06-4028-aad4-fcfb4f6e690c" absoluteBounds="0.765, 12.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="51520666-7b81-4ad4-a459-7a90a1b09889" absoluteBounds="0.75, 4.625, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/HavanadataclassesDataContext/tblreg" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3688fb38-60f8-41c1-ba13-34972e7259a4" absoluteBounds="0.765, 5.085, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="88d418fa-8b48-4ece-a976-21685561fc9f" absoluteBounds="9.5, 1.125, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/HavanadataclassesDataContext/tblrplycontact" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3d45766b-5899-486d-942b-88da0f2a35d9" absoluteBounds="9.515, 1.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(14.75 : 2.01044840494792); (15.5 : 2.01044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HavanadataclassesDataContext/tblblockcategory/tblblockcategory_tblavailableblock" />
+      <nodes>
+        <classShapeMoniker Id="8da25843-2b26-4ab4-bada-e88107fef2c5" />
+        <classShapeMoniker Id="1f540226-5619-45e9-bbb3-1a93e72ea7aa" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 10.2315991210937); (9.5 : 10.2315991210937)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HavanadataclassesDataContext/tblfeedback/tblfeedback_FeebackRply" />
+      <nodes>
+        <classShapeMoniker Id="feeae468-b1d6-4e20-b6f3-b928dffbc993" />
+        <classShapeMoniker Id="863c2e52-f97b-4949-8ef7-71a5eaf4d7eb" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 6.13544840494792); (9.5 : 6.13544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HavanadataclassesDataContext/tblPlansMaster/tblPlansMaster_tblPlanCharge" />
+      <nodes>
+        <classShapeMoniker Id="7996ef7f-826f-4ac6-b255-1cccf3f17cf4" />
+        <classShapeMoniker Id="783b69a3-653b-4fef-a3a2-ad372233cbe8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.70755126953125); (3.5 : 5.70755126953125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HavanadataclassesDataContext/tblreg/tblreg_tblbank" />
+      <nodes>
+        <classShapeMoniker Id="51520666-7b81-4ad4-a459-7a90a1b09889" />
+        <classShapeMoniker Id="1fc6ae66-2d0f-4533-b934-a6db1bce8766" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 4.625); (1.75 : 2.32774983723958); (3.5 : 2.32774983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HavanadataclassesDataContext/tblreg/tblreg_tblkyc" />
+      <nodes>
+        <classShapeMoniker Id="51520666-7b81-4ad4-a459-7a90a1b09889" />
+        <classShapeMoniker Id="d68abbd4-bdb3-4f97-a299-e9670b7c9c43" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 7.35740397135417); (1.75 : 9.05850341796875); (3.5 : 9.05850341796875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HavanadataclassesDataContext/tblreg/tblreg_tblprofile" />
+      <nodes>
+        <classShapeMoniker Id="51520666-7b81-4ad4-a459-7a90a1b09889" />
+        <classShapeMoniker Id="6a71beb6-21c7-4007-a3e0-b79b77efb389" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 2.10659912109375); (9.5 : 2.10659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HavanadataclassesDataContext/tblcontactus/tblcontactus_tblrplycontact" />
+      <nodes>
+        <classShapeMoniker Id="b9a87de8-4f9f-40fc-a91b-d5e71f1079e8" />
+        <classShapeMoniker Id="88d418fa-8b48-4ece-a976-21685561fc9f" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
